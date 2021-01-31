@@ -4,7 +4,7 @@
 }
 #page-content{
     background: #FF7999;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     padding-left: 10%;
@@ -12,6 +12,9 @@
     padding-top: 5%;
     padding-bottom: 5%;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 98% 2%;
+    grid-template-rows: 100% 100%;
 }
 #page-header{
     margin: 10px;
@@ -23,21 +26,14 @@
 }
 
 #content-wrapper{
-    flex: 98%;
     position: relative;
+    height    : 100%;
     background: #FFFFFF;
-    width: 100vw;
-    height: 100vh;
-
-    /*display: flex;*/
-    /*align-items: flex-start;*/
-    /*flex-direction: column;*/
     justify-content: space-between;
 }
 #box{
-    flex: 2%;
-    width: 100vw;
-    height: 100vh;
+    position: relative;
+    height    : 100%;
     background: url("../images/Vector 19.png") no-repeat;
     background-size: cover;
 }
@@ -71,6 +67,8 @@
     font-weight: bold;
     font-size: 44px;
     line-height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /* or 136% */
 
 
@@ -85,6 +83,8 @@
     font-weight: bold;
     font-size: 26px;
     line-height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /* or 136% */
 
     /* Dark Color */
@@ -112,7 +112,69 @@
     padding: 20px;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    margin-top: 20px;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #page-content{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+    }
+    .row{
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 1%;
+        display: block;
+    }
+    .sideLeft img{
+        width: 50%;
+        height: 50%;
+    }
+    .row .sideLeft{
+        display: block;
+    }
+    .row .sideRight{
+        padding-left: 10px;
+        display: block;
+    }
+    #content-wrapper main h1{
+        max-width: 400px;
+        font-family: 'Heebo', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        /* or 136% */
+
+
+        /* Dark Color */
+
+        color: #21243D;
+    }
+
+    #content-wrapper main h2{
+        font-family: 'Heebo', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 50px;
+        /* or 136% */
+
+        /* Dark Color */
+        color: #21243D;
+    }
+
+    #content-wrapper main p{
+
+        margin-top: 40px;
+        font-family: 'Heebo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 25px;
+    }
 }
 
