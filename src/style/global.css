@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a.button{
+    /* Primary */
+    background: #FF6464;
+    border-radius: 2px;
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+}

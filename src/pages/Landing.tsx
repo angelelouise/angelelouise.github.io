@@ -4,25 +4,36 @@ import pdf from "../files/Angele_CV.pdf";
 import fb from "../images/fb.png";
 import insta from "../images/insta.png";
 import linkedin from "../images/Linkedin.png";
-// import {FiArrowRight} from "react-icons/fi";
+import {FaGithubSquare} from "react-icons/fa";
 import '../style/landing.css'
+import '../style/global.css'
 import { Link } from 'react-router-dom';
+import {HiOutlineMail} from "react-icons/all";
+import ReactTooltip from "react-tooltip";
 
 function Landing() {
     return (
         <div id="page-landing">
+            <ReactTooltip />
             <div id ="page-content">
                 <div id="content-wrapper">
                     <div id="page-header">
-                        <a href="https://www.facebook.com/angeleTeles">
-                            <img src={fb}/>
+                        <ReactTooltip />
+                        <a href="https://github.com/angelelouise" data-tip="Github">
+                            <FaGithubSquare size={33} color="#21243D" />
                         </a>
-                        <a href="https://www.instagram.com/angelelouise/">
+                        <a href="https://www.facebook.com/angeleTeles">
+                            <img src={fb} alt="Facebook" data-tip="Facebook"/>
+                        </a>
+                        <a href="https://www.instagram.com/angelelouise/ " data-tip="Instagram">
                             <img src={insta}/>
                         </a>
-                        <a href="https://www.linkedin.com/in/angele-teles-6a670b141/">
+                        <a href="https://www.linkedin.com/in/angele-teles-6a670b141/" data-tip="Linkedin">
                             <img src={linkedin}/>
                         </a>
+                        <Link id="link_contato" to="/contato" data-tip="Entre em Contato">
+                            <HiOutlineMail size={36} color="#21243D"/>
+                        </Link>
                     </div>
                     <div className="row" id="about">
                         <div className="sideLeft">
