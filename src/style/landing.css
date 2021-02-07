@@ -62,9 +62,6 @@
 }
 #content-wrapper main h1{
     max-width: 400px;
-    font-family: 'Heebo', sans-serif;
-    font-style: normal;
-    font-weight: bold;
     font-size: 44px;
     line-height: 60px;
     margin-top: 10px;
@@ -78,9 +75,6 @@
 }
 
 #content-wrapper main h2{
-    font-family: 'Heebo', sans-serif;
-    font-style: normal;
-    font-weight: bold;
     font-size: 26px;
     line-height: 60px;
     margin-top: 10px;
@@ -94,9 +88,6 @@
 #content-wrapper main p{
 
     margin-top: 40px;
-    font-family: 'Heebo', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
 }

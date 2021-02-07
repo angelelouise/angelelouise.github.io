@@ -3,6 +3,25 @@
     padding: 0;
 }
 
+p{
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h2{
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1{
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
 a.button{
     /* Primary */
     background: #FF6464;
@@ -16,3 +35,18 @@ a.button{
     color: #FFFFFF;
     text-decoration: none;
 }
+
+button{
+    /* Primary */
+    background: #FF6464;
+    border-radius: 2px;
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
