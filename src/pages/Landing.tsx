@@ -4,6 +4,7 @@ import pdf from "../files/Angele_CV.pdf";
 import fb from "../images/fb.png";
 import insta from "../images/insta.png";
 import linkedin from "../images/Linkedin.png";
+import apotheca from "../images/apotheca.png";
 import {FaGithubSquare} from "react-icons/fa";
 import '../style/landing.css'
 import '../style/global.css'
@@ -37,7 +38,7 @@ function Landing() {
                     </div>
                     <div className="row" id="about">
                         <div className="sideLeft">
-                            <img src={avatar} ></img>
+                            <img src={avatar} alt="apotheca"></img>
 
                         </div>
                         <div className="sideRight">
@@ -55,11 +56,41 @@ function Landing() {
                             </main>
                         </div>
                     </div>
-                    <div className="row" id="work">
-                        <main>
-                            <h2>Portfólio</h2>
-                        </main>
 
+                    <div className="row" id="work">
+                        <div className="row">
+                            <main>
+                                <h1>Portfólio</h1>
+                            </main>
+                        </div>
+                        <div className="row">
+                            <div className="sideLeft">
+                                <img src={apotheca} ></img>
+
+                            </div>
+                            <div className="sideRight">
+                                <main>
+                                    <h2>Apotheca</h2>
+                                    <div className="listTech">
+                                        <span>Android</span>
+                                        <span>Firebase</span>
+                                    </div>
+                                    <p> Aplicativo de Compartilhamento de Conhecimento para Alunos da UFRN, desenvolvido como trabalho de                                            conclusão da especialização em dispositivos móveis.
+                                    </p>
+                                    <br/>
+                                    <br/>
+                                    <a href="https://github.com/angelelouise/apotheca" className="button">Acessar Projeto</a>
+                                </main>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="sideLeft">
+
+                            </div>
+                            <div className="sideRight">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="box"/>

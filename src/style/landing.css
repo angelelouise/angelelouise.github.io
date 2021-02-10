@@ -4,6 +4,7 @@
 }
 #page-content{
     background: #FF7999;
+
     /*display: flex;*/
     justify-content: center;
     align-items: center;
@@ -38,11 +39,11 @@
     background-size: cover;
 }
 .row{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
+    margin: 0!important;
+    padding: 3%;
     display: flex;
     flex-wrap: wrap;
+    text-align: justify;
 }
 .row .sideLeft{
     flex: 5%;
@@ -53,6 +54,20 @@
     flex: 55%;
     display: block;
 }
+.listTech{
+    display: flex;
+    flex-direction: row;
+}
+.listTech span{
+    color: #FFFFFF;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: url("../images/Rectangle 2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #content-wrapper img{
     max-width: 100%;
     max-height: 100%;
@@ -66,6 +81,7 @@
     line-height: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: left;
     /* or 136% */
 
 
@@ -92,7 +108,7 @@
     line-height: 25px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     #page-content{
         padding-left: 5%;
         padding-right: 5%;
@@ -101,10 +117,9 @@
 
     }
     .row{
-        padding-left: 1%;
-        padding-right: 1%;
-        padding-top: 1%;
-        display: block;
+        padding: 1%;
+        padding-bottom: 3%;
+        flex-direction: column;
     }
     .sideLeft img{
         width: 50%;
@@ -116,6 +131,7 @@
     .row .sideRight{
         padding-left: 10px;
         display: block;
+
     }
     #content-wrapper main h1{
         max-width: 400px;
@@ -152,6 +168,12 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 25px;
+    }
+    #about{
+        text-align: center;
+    }
+    #page-header{
+        justify-content: center;
     }
 }
 
