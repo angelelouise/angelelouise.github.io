@@ -1,26 +1,27 @@
 {
   "files": {
     "main.css": "/static/css/main.56eeeaa2.chunk.css",
-    "main.js": "/static/js/main.e2503e32.chunk.js",
-    "main.js.map": "/static/js/main.e2503e32.chunk.js.map",
+    "main.js": "/static/js/main.b3ebb4db.chunk.js",
+    "main.js.map": "/static/js/main.b3ebb4db.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c9836dda.js",
     "runtime-main.js.map": "/static/js/runtime-main.c9836dda.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
-    "static/js/2.7a913deb.chunk.js": "/static/js/2.7a913deb.chunk.js",
-    "static/js/2.7a913deb.chunk.js.map": "/static/js/2.7a913deb.chunk.js.map",
+    "static/js/2.0dac4cad.chunk.js": "/static/js/2.0dac4cad.chunk.js",
+    "static/js/2.0dac4cad.chunk.js.map": "/static/js/2.0dac4cad.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
     "static/css/main.56eeeaa2.chunk.css.map": "/static/css/main.56eeeaa2.chunk.css.map",
-    "static/js/2.7a913deb.chunk.js.LICENSE.txt": "/static/js/2.7a913deb.chunk.js.LICENSE.txt",
-    "static/js/main.e2503e32.chunk.js.LICENSE.txt": "/static/js/main.e2503e32.chunk.js.LICENSE.txt",
+    "static/js/2.0dac4cad.chunk.js.LICENSE.txt": "/static/js/2.0dac4cad.chunk.js.LICENSE.txt",
+    "static/js/main.b3ebb4db.chunk.js.LICENSE.txt": "/static/js/main.b3ebb4db.chunk.js.LICENSE.txt",
     "static/media/Angele_CV.20b46039.pdf": "/static/media/Angele_CV.20b46039.pdf",
-    "static/media/avatar.446e47a0.png": "/static/media/avatar.446e47a0.png"
+    "static/media/avatar.446e47a0.png": "/static/media/avatar.446e47a0.png",
+    "static/media/cypress.e8d705be.jpg": "/static/media/cypress.e8d705be.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c9836dda.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.7a913deb.chunk.js",
+    "static/js/2.0dac4cad.chunk.js",
     "static/css/main.56eeeaa2.chunk.css",
-    "static/js/main.e2503e32.chunk.js"
+    "static/js/main.b3ebb4db.chunk.js"
   ]
 }
