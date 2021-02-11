@@ -5,12 +5,14 @@ import fb from "../images/fb.png";
 import insta from "../images/insta.png";
 import linkedin from "../images/Linkedin.png";
 import apotheca from "../images/apotheca.png";
+import cypress from "../images/cypress.jpg";
 import {FaGithubSquare} from "react-icons/fa";
 import '../style/landing.css'
 import '../style/global.css'
 import { Link } from 'react-router-dom';
 import {HiOutlineMail} from "react-icons/all";
 import ReactTooltip from "react-tooltip";
+import {Col, Container, Row} from "react-bootstrap";
 
 function Landing() {
     return (
@@ -56,19 +58,19 @@ function Landing() {
                             </main>
                         </div>
                     </div>
-
-                    <div className="row" id="work">
-                        <div className="row">
-                            <main>
-                                <h1>Portfólio</h1>
-                            </main>
-                        </div>
-                        <div className="row">
-                            <div className="sideLeft">
+                    <Container id="work">
+                        <Row>
+                            <Col>
+                                <main>
+                                    <h1>Portfólio</h1>
+                                </main>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col sm={4}>
                                 <img src={apotheca} ></img>
-
-                            </div>
-                            <div className="sideRight">
+                            </Col>
+                            <Col sm={8}>
                                 <main>
                                     <h2>Apotheca</h2>
                                     <div className="listTech">
@@ -81,17 +83,29 @@ function Landing() {
                                     <br/>
                                     <a href="https://github.com/angelelouise/apotheca" className="button">Acessar Projeto</a>
                                 </main>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="sideLeft">
-
-                            </div>
-                            <div className="sideRight">
-
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col sm={4}>
+                                <img src={cypress} ></img>
+                            </Col>
+                            <Col sm={8}>
+                                <main>
+                                    <h2>Cypress: API Testing</h2>
+                                    <div className="listTech">
+                                        <span>Cypress</span>
+                                        <span>JavaScript</span>
+                                        <span> JSON </span>
+                                    </div>
+                                    <p> Projeto prático de testes em APIs públicas utilizando do framework de testes Cypress.
+                                    </p>
+                                    <br/>
+                                    <br/>
+                                    <a href="https://github.com/angelelouise/cypress_test_api" className="button">Acessar Projeto</a>
+                                </main>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
                 <div id="box"/>
             </div>
