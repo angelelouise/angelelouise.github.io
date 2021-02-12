@@ -6,7 +6,7 @@ import insta from "../images/insta.png";
 import linkedin from "../images/Linkedin.png";
 import apotheca from "../images/apotheca.png";
 import cypress from "../images/cypress.jpg";
-import {FaGithubSquare} from "react-icons/fa";
+import {FaGithubSquare, FaFacebookSquare, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
 import '../style/landing.css'
 import '../style/global.css'
 import { Link } from 'react-router-dom';
@@ -21,27 +21,31 @@ function Landing() {
             <div id ="page-content">
                 <div id="content-wrapper">
                     <div id="page-header">
-                        <ReactTooltip />
-                        <a href="https://github.com/angelelouise" data-tip="Github">
-                            <FaGithubSquare size={33} color="#21243D" />
-                        </a>
-                        <a href="https://www.facebook.com/angeleTeles">
-                            <img src={fb} alt="Facebook" data-tip="Facebook"/>
-                        </a>
-                        <a href="https://www.instagram.com/angelelouise/ " data-tip="Instagram">
-                            <img src={insta}/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/angele-teles-6a670b141/" data-tip="Linkedin">
-                            <img src={linkedin}/>
-                        </a>
-                        <Link id="link_contato" to="/contato" data-tip="Entre em Contato">
-                            <HiOutlineMail size={36} color="#21243D"/>
+                        <Link id="link_portifolio" to="#work" >
+                            Portifólio
+                        </Link>
+                        <Link id="link_contato" to="/contato">
+                            Entre em contato
                         </Link>
                     </div>
                     <div className="row" id="about">
                         <div className="sideLeft">
                             <img src={avatar} alt="apotheca"></img>
-
+                            <div id="sociais">
+                                <ReactTooltip />
+                                <a href="https://github.com/angelelouise" data-tip="Github">
+                                    <FaGithubSquare size={33} color="#21243D" />
+                                </a>
+                                <a href="https://www.facebook.com/angeleTeles" data-tip="Facebook">
+                                    <FaFacebookSquare size={33} color="#21243D" />
+                                </a>
+                                <a href="https://www.instagram.com/angelelouise/ " data-tip="Instagram">
+                                    <FaInstagramSquare size={33} color="#21243D"/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/angele-teles-6a670b141/" data-tip="Linkedin">
+                                    <FaLinkedin size={33} color="#21243D"/>
+                                </a>
+                            </div>
                         </div>
                         <div className="sideRight">
                             <main>

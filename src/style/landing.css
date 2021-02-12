@@ -24,6 +24,20 @@
 }
 #page-header a{
     margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color: #21243D;
+    /*color: #FFFFFF;*/
+    /*background-color: #FF6464;*/
+}
+
+#sociais{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+#sociais a{
+    margin: 10px;
 }
 
 #content-wrapper{
@@ -173,6 +187,9 @@
         text-align: center;
     }
     #page-header{
+        justify-content: center;
+    }
+    #sociais{
         justify-content: center;
     }
 }
