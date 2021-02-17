@@ -1,18 +1,15 @@
 import React from "react";
 import avatar from "../images/avatar.png";
 import pdf from "../files/Angele_CV.pdf";
-import fb from "../images/fb.png";
-import insta from "../images/insta.png";
-import linkedin from "../images/Linkedin.png";
 import apotheca from "../images/apotheca.png";
 import cypress from "../images/cypress.jpg";
 import {FaGithubSquare, FaFacebookSquare, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
 import '../style/landing.css'
 import '../style/global.css'
-import { Link } from 'react-router-dom';
-import {HiOutlineMail} from "react-icons/all";
 import ReactTooltip from "react-tooltip";
 import {Col, Container, Row} from "react-bootstrap";
+import PageHeader from "../fragments/page-header";
+import PageFooter from "../fragments/page-footer";
 
 function Landing() {
     return (
@@ -20,17 +17,10 @@ function Landing() {
             <ReactTooltip />
             <div id ="page-content">
                 <div id="content-wrapper">
-                    <div id="page-header">
-                        <Link id="link_portifolio" to="#work" >
-                            Portifólio
-                        </Link>
-                        <Link id="link_contato" to="/contato">
-                            Entre em contato
-                        </Link>
-                    </div>
+                    <PageHeader/>
                     <div className="row" id="about">
                         <div className="sideLeft">
-                            <img src={avatar} alt="apotheca"></img>
+                            <img src={avatar} alt="avatar"/>
                             <div id="sociais">
                                 <ReactTooltip />
                                 <a href="https://github.com/angelelouise" data-tip="Github">
@@ -62,54 +52,57 @@ function Landing() {
                             </main>
                         </div>
                     </div>
-                    <Container id="work">
-                        <Row>
-                            <Col>
-                                <main>
-                                    <h1>Portfólio</h1>
-                                </main>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col sm={4}>
-                                <img src={apotheca} ></img>
-                            </Col>
-                            <Col sm={8}>
-                                <main>
-                                    <h2>Apotheca</h2>
-                                    <div className="listTech">
-                                        <span>Android</span>
-                                        <span>Firebase</span>
-                                    </div>
-                                    <p> Aplicativo de Compartilhamento de Conhecimento para Alunos da UFRN, desenvolvido como trabalho de                                            conclusão da especialização em dispositivos móveis.
-                                    </p>
-                                    <br/>
-                                    <br/>
-                                    <a href="https://github.com/angelelouise/apotheca" className="button">Acessar Projeto</a>
-                                </main>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col sm={4}>
-                                <img src={cypress} ></img>
-                            </Col>
-                            <Col sm={8}>
-                                <main>
-                                    <h2>Cypress: API Testing</h2>
-                                    <div className="listTech">
-                                        <span>Cypress</span>
-                                        <span>JavaScript</span>
-                                        <span> JSON </span>
-                                    </div>
-                                    <p> Projeto prático de testes em APIs públicas utilizando do framework de testes Cypress.
-                                    </p>
-                                    <br/>
-                                    <br/>
-                                    <a href="https://github.com/angelelouise/cypress_test_api" className="button">Acessar Projeto</a>
-                                </main>
-                            </Col>
-                        </Row>
-                    </Container>
+                    <div id="work">
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <main>
+                                        <h1>Portfólio</h1>
+                                    </main>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col sm={4}>
+                                    <img src={apotheca} alt="apotheca"/>
+                                </Col>
+                                <Col sm={8}>
+                                    <main>
+                                        <h2>Apotheca</h2>
+                                        <div className="listTech">
+                                            <span>Android</span>
+                                            <span>Firebase</span>
+                                        </div>
+                                        <p> Aplicativo de Compartilhamento de Conhecimento para Alunos da UFRN, desenvolvido como trabalho de                                            conclusão da especialização em dispositivos móveis.
+                                        </p>
+                                        <br/>
+                                        <br/>
+                                        <a href="https://github.com/angelelouise/apotheca" className="button">Acessar Projeto</a>
+                                    </main>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col sm={4}>
+                                    <img src={cypress} alt="cypress"/>
+                                </Col>
+                                <Col sm={8}>
+                                    <main>
+                                        <h2>Cypress: API Testing</h2>
+                                        <div className="listTech">
+                                            <span>Cypress</span>
+                                            <span>JavaScript</span>
+                                            <span> JSON </span>
+                                        </div>
+                                        <p> Projeto prático de testes em APIs públicas utilizando do framework de testes Cypress.
+                                        </p>
+                                        <br/>
+                                        <br/>
+                                        <a href="https://github.com/angelelouise/cypress_test_api" className="button">Acessar Projeto</a>
+                                    </main>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </div>
+                    <PageFooter/>
                 </div>
                 <div id="box"/>
             </div>

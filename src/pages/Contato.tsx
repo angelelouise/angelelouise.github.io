@@ -4,6 +4,8 @@ import '../style/global.css'
 import{ init} from 'emailjs-com';
 import emailjs from 'emailjs-com';
 import ModalCadastroSucesso from "../js/modal-cadastro-sucesso";
+import PageHeader from "../fragments/page-header";
+import PageFooter from "../fragments/page-footer";
 
 interface State {
     assunto: string,
@@ -120,6 +122,7 @@ class Contato extends React.Component<any, State>{
             <div id="contato-page-landing">
                 <div id="contato-page-content">
                     <div id="contato-content-wrapper">
+                        <PageHeader/>
                         <form onSubmit={this.handleSubmit}>
                             <h1>Entre em contato</h1>
                             {this.state.exibeErro ? <span style={{color: "red"}}>Por favor, preencher os campos.</span>: ''}
@@ -138,6 +141,7 @@ class Contato extends React.Component<any, State>{
 
                         </form>
                         {this.state.show ? (<ModalCadastroSucesso show={this.state.sucess} />) : null}
+                        <PageFooter/>
                     </div>
                     <div id="contato-box"/>
                 </div>
