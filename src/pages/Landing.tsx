@@ -3,6 +3,15 @@ import avatar from "../images/avatar.png";
 import pdf from "../files/Angele_CV.pdf";
 import apotheca from "../images/apotheca.png";
 import cypress from "../images/cypress.jpg";
+import selenium from "../images/selenium.png";
+import appium from "../images/appium.png";
+import junit from "../images/junit.png";
+import js from "../images/js.png";
+import java from "../images/java.png";
+import sql from "../images/sql.png";
+import json from "../images/json.png";
+import html from "../images/html.png";
+import css from "../images/css.png";
 import {FaGithubSquare, FaFacebookSquare, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
 import '../style/landing.css'
 import '../style/global.css'
@@ -52,6 +61,86 @@ function Landing() {
                             </main>
                         </div>
                     </div>
+                    <div id="skills">
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <main>
+                                        <h1>Skills</h1>
+                                    </main>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <img src={cypress} alt="cypress" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>Cypress</span>
+                                    </Row>
+
+                                </Col>
+                                <Col>
+                                    <img src={selenium} alt="selenium" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>Selenium</span>
+                                    </Row>
+                                </Col>
+                                <Col>
+                                    <img src={appium} alt="appium" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>Appium</span>
+                                    </Row>
+                                </Col>
+                                <Col>
+                                    <img src={junit} alt="junit" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>JUnit</span>
+                                    </Row>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <img src={js} alt="js" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>Javascript</span>
+                                    </Row>
+                                </Col>
+                                <Col>
+                                    <img src={java} alt="java" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>Java</span>
+                                    </Row>
+                                </Col>
+                                <Col>
+                                    <img src={sql} alt="sql" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>SQL</span>
+                                    </Row>
+                                </Col>
+                                <Col>
+                                    <img src={json} alt="json" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>JSON</span>
+                                    </Row>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <img src={html} alt="html" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>HTML</span>
+                                    </Row>
+                                </Col>
+                                <Col>
+                                    <img src={css} alt="css" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>CSS</span>
+                                    </Row>
+                                </Col>
+
+                            </Row>
+
+                        </Container>
+                    </div>
                     <div id="work">
                         <Container>
                             <Row>
@@ -63,7 +152,7 @@ function Landing() {
                             </Row>
                             <Row>
                                 <Col sm={4}>
-                                    <img src={apotheca} alt="apotheca"/>
+                                    <img src={apotheca} alt="apotheca" style={{width: 200, height: 200, position: 'relative'}}/>
                                 </Col>
                                 <Col sm={8}>
                                     <main>
@@ -82,7 +171,7 @@ function Landing() {
                             </Row>
                             <Row>
                                 <Col sm={4}>
-                                    <img src={cypress} alt="cypress"/>
+                                    <img src={cypress} alt="cypress" style={{width: 200, height: 200, position: 'relative'}}/>
                                 </Col>
                                 <Col sm={8}>
                                     <main>
