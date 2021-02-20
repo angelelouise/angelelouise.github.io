@@ -16,7 +16,7 @@ import {FaGithubSquare, FaFacebookSquare, FaInstagramSquare, FaLinkedin} from "r
 import '../style/landing.css'
 import '../style/global.css'
 import ReactTooltip from "react-tooltip";
-import {Col, Container, Row} from "react-bootstrap";
+import {Badge, Col, Container, Row} from "react-bootstrap";
 import PageHeader from "../fragments/page-header";
 import PageFooter from "../fragments/page-footer";
 
@@ -152,20 +152,33 @@ function Landing() {
                             </Row>
                             <Row>
                                 <Col sm={4}>
-                                    <img src={apotheca} alt="apotheca" style={{width: 200, height: 200, position: 'relative'}}/>
+                                    <img src={cypress} alt="cypress" style={{width: 200, height: 200, position: 'relative'}}/>
                                 </Col>
                                 <Col sm={8}>
                                     <main>
-                                        <h2>Apotheca</h2>
-                                        <div className="listTech">
-                                            <span>Android</span>
-                                            <span>Firebase</span>
-                                        </div>
-                                        <p> Aplicativo de Compartilhamento de Conhecimento para Alunos da UFRN, desenvolvido como trabalho de                                            conclusão da especialização em dispositivos móveis.
+                                        <h2>Cypress: Front-end testing</h2>
+                                        <Badge pill variant="info">
+                                            Cypress
+                                        </Badge>{' '}
+                                        <Badge pill variant="info">
+                                            JavaScript
+                                        </Badge>{' '}
+                                        <Badge pill variant="info">
+                                            JSON
+                                        </Badge>{' '}
+                                        <p> Projeto para treinamento de testes automatizados voltados para o front-end.
                                         </p>
                                         <br/>
                                         <br/>
-                                        <a href="https://github.com/angelelouise/apotheca" className="button">Acessar Projeto</a>
+                                        <Row>
+                                            <Col className="link_group">
+                                                <a href="/example-cypress" className="button">Acessar Página</a>
+                                            </Col>
+                                            <Col className="link_group">
+                                                <a href="https://github.com/angelelouise/cypress_test_front" className="button">Acessar Projeto</a>
+                                            </Col>
+                                        </Row>
+
                                     </main>
                                 </Col>
                             </Row>
@@ -176,17 +189,55 @@ function Landing() {
                                 <Col sm={8}>
                                     <main>
                                         <h2>Cypress: API Testing</h2>
-                                        <div className="listTech">
-                                            <span>Cypress</span>
-                                            <span>JavaScript</span>
-                                            <span> JSON </span>
-                                        </div>
+                                        <Badge pill variant="info">
+                                            Cypress
+                                        </Badge>{' '}
+                                        <Badge pill variant="info">
+                                            JavaScript
+                                        </Badge>{' '}
+                                        <Badge pill variant="info">
+                                            JSON
+                                        </Badge>{' '}
                                         <p> Projeto prático de testes em APIs públicas utilizando do framework de testes Cypress.
                                         </p>
                                         <br/>
                                         <br/>
-                                        <a href="https://github.com/angelelouise/cypress_test_api" className="button">Acessar Projeto</a>
+                                        <Row>
+                                            <Col className="link_group">
+                                                <a href="https://github.com/angelelouise/cypress_test_api" className="button">Acessar Projeto</a>
+                                            </Col>
+                                        </Row>
                                     </main>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col sm={4}>
+                                    <img src={apotheca} alt="apotheca" style={{width: 200, height: 200, position: 'relative'}}/>
+                                </Col>
+                                <Col sm={8}>
+                                    <main>
+                                        <h2>Apotheca</h2>
+                                        <Badge pill variant="info">
+                                            Android
+                                        </Badge>{' '}
+                                        <Badge pill variant="info">
+                                            Firebase
+                                        </Badge>{' '}
+                                        <p> Aplicativo de Compartilhamento de Conhecimento para Alunos da UFRN, desenvolvido como trabalho de                                            conclusão da especialização em dispositivos móveis.
+                                        </p>
+                                        <br/>
+                                        <br/>
+                                        <Row>
+                                            <Col className="link_group">
+                                                <a href="https://github.com/angelelouise/apotheca" className="button">Acessar Projeto</a>
+                                            </Col>
+                                        </Row>
+                                    </main>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <a href="/#work" className="button">Veja mais...</a>
                                 </Col>
                             </Row>
                         </Container>
