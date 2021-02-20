@@ -19,6 +19,7 @@ import ReactTooltip from "react-tooltip";
 import {Badge, Col, Container, Row} from "react-bootstrap";
 import PageHeader from "../fragments/page-header";
 import PageFooter from "../fragments/page-footer";
+import {Link} from "react-router-dom";
 
 function Landing() {
     return (
@@ -172,7 +173,7 @@ function Landing() {
                                         <br/>
                                         <Row>
                                             <Col className="link_group">
-                                                <a href="/example-cypress" className="button">Acessar Página</a>
+                                                <Link to="/example-cypress" className="button">Acessar Página</Link>
                                             </Col>
                                             <Col className="link_group">
                                                 <a href="https://github.com/angelelouise/cypress_test_front" className="button">Acessar Projeto</a>
