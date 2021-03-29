@@ -153,6 +153,31 @@ function Landing() {
                             </Row>
                             <Row>
                                 <Col sm={4}>
+                                    <img src={js} alt="react" style={{width: 200, height: 200, position: 'relative'}}/>
+                                </Col>
+                                <Col sm={8}>
+                                    <main>
+                                        <h2>Atividade: Pedras preciosas</h2>
+                                        <Badge pill variant="info">
+                                            React
+                                        </Badge>{' '}
+                                        <Badge pill variant="info">
+                                            JavaScript
+                                        </Badge>{' '}
+                                        <p> Experimento base para minha tese do mestrado.
+                                        </p>
+                                        <br/>
+                                        <br/>
+                                        <Row>
+                                            <Col className="link_group">
+                                                <Link to="/jogo" className="button">Acessar Página</Link>
+                                            </Col>
+                                        </Row>
+                                    </main>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col sm={4}>
                                     <img src={cypress} alt="cypress" style={{width: 200, height: 200, position: 'relative'}}/>
                                 </Col>
                                 <Col sm={8}>
