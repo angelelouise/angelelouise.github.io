@@ -11,11 +11,12 @@ interface JogoState {
     corC: any,
     resultado :string,
     AZUL: string,
-    AMARELO: string
-    ROXO: string
-    countA: number
-    countB: number
-    countC: number
+    AMARELO: string,
+    ROXO: string,
+    VERDE: string,
+    countA: number,
+    countB: number,
+    countC: number,
 }
 class Jogo extends React.Component<any, JogoState>{
     constructor(props : any) {
@@ -27,6 +28,7 @@ class Jogo extends React.Component<any, JogoState>{
             AZUL: '#0000ff',
             AMARELO: '#ffff00',
             ROXO: '#9718ff',
+            VERDE: '#00ff00',
             resultado: '',
             countA: 0,
             countB : 0,
@@ -52,19 +54,32 @@ class Jogo extends React.Component<any, JogoState>{
             this.setState({
                 resultado: 'Ametista'
             })
-        }else if(this.state.corB!==this.state.ROXO && this.state.corB!==this.state.ROXO && this.state.corC!==this.state.ROXO){
+        }else if(this.state.corA===this.state.VERDE && this.state.corB===this.state.VERDE && this.state.corC===this.state.AMARELO){
+            this.setState({
+                resultado: 'Turquesa'
+            })
+        }else if(this.state.corA===this.state.VERDE && this.state.corB===this.state.AMARELO && this.state.corC===this.state.VERDE){//erro
+            this.setState({
+                resultado: 'Esmeralda'
+            })
+        }else if((this.state.corA!==this.state.AMARELO && (this.state.corA===this.state.AZUL || this.state.corA===this.state.VERDE)) && (this.state.corB!==this.state.AMARELO && (this.state.corB===this.state.AZUL || this.state.corC===this.state.VERDE)) && (this.state.corC!==this.state.AMARELO && (this.state.corC===this.state.AZUL || this.state.corC===this.state.VERDE))){
             this.setState({
                 resultado: 'Agua marinha'
             })
+        }else{
+            this.setState({
+                resultado: ''
+            })
         }
+
     }
     handleClickB = ()=>{
-        var sequencia = [this.state.AZUL,this.state.AMARELO, this.state.ROXO];
+        var sequencia = [this.state.AZUL,this.state.AMARELO, this.state.ROXO, this.state.VERDE];
         this.setState({
             corB:sequencia[this.state.countB]
         }, ()=> this.handleResult());
 
-        if(this.state.countB<2){
+        if(this.state.countB<3){
             this.setState({
                 countB: this.state.countB + 1
             });
@@ -77,11 +92,11 @@ class Jogo extends React.Component<any, JogoState>{
     }
 
     handleClickA = ()=>{
-        var sequencia = [this.state.AZUL,this.state.AMARELO, this.state.ROXO];
+        var sequencia = [this.state.AZUL,this.state.AMARELO, this.state.ROXO, this.state.VERDE];
         this.setState({
             corA:sequencia[this.state.countA]
         }, ()=> this.handleResult());
-        if(this.state.countA<2){
+        if(this.state.countA<3){
             this.setState({
                 countA: this.state.countA + 1
             });
@@ -94,11 +109,12 @@ class Jogo extends React.Component<any, JogoState>{
     }
 
     handleClickC = ()=>{
-        var sequencia = [this.state.AZUL,this.state.AMARELO, this.state.ROXO];
+        //erro aqui
+        var sequencia = [this.state.AZUL,this.state.AMARELO, this.state.VERDE, this.state.ROXO];
         this.setState({
             corC:sequencia[this.state.countC]
         }, ()=> this.handleResult());
-        if(this.state.countC<2){
+        if(this.state.countC<3){
             this.setState({
                 countC: this.state.countC + 1
             });
