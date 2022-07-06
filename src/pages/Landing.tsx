@@ -12,6 +12,7 @@ import sql from "../images/sql.png";
 import json from "../images/json.png";
 import html from "../images/html.png";
 import css from "../images/css.png";
+import robot from "../images/robotfw.png";
 import {FaGithubSquare, FaFacebookSquare, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
 import '../style/landing.css'
 import '../style/global.css'
@@ -50,10 +51,8 @@ function Landing() {
                         <div className="sideRight">
                             <main>
                                 <h1>Angele Louise, Analista de Testes</h1>
-                                <p> Líder da equipe de controle de qualidade do SIPAC na Superintendência de Informática da UFRN, ISTQB                                          Certified Tester - CTFL, com experiência em testes exploratórios, testes ágeis, testes automatizados e                                      análise de requisitos.<br/><br/>
-
-                                    Especialista em Desenvolvimento de Aplicações para Dispositivos Móveis (2019) pelo Instituto Metrópole                                       Digital da UFRN, graduada em Engenharia da Computação (2017) pela Universidade Federal do Rio Grande do                                     Norte - UFRN, bacharela em Ciências e Tecnologia também pela Universidade Federal do Rio Grande do Norte                                    (2014).<br/>
-                                    Atualmente, aluna de mestrado em sistemas e computação (PPGSC). <br/>
+                                <p> Analista QA Fullstack, ISTQB Certified Tester - CTFL, com experiência em testes exploratórios, testes ágeis, testes automatizados ponta a ponta (end-to-end) e de API com Cypress, Selenium e Robot Framework, metodologias de teste como BDD e TDD e análise de requisitos.<br/>
+                                    Especialista em Desenvolvimento de Aplicações para Dispositivos Móveis (2019) pelo Instituto Metrópole Digital da UFRN, graduada em Engenharia da Computação (2017) pela Universidade Federal do Rio Grande do Norte - UFRN, bacharela em Ciências e Tecnologia também pela Universidade Federal do Rio Grande do Norte (2014).  <br/>
                                 </p>
                                 <br/>
                                 <br/>
@@ -76,6 +75,13 @@ function Landing() {
                                     <img src={cypress} alt="cypress" style={{width: 50, height: 50}} />
                                     <Row className="justify-content-center">
                                         <span>Cypress</span>
+                                    </Row>
+
+                                </Col>
+                                <Col>
+                                    <img src={robot} alt="robotf" style={{width: 50, height: 50}} />
+                                    <Row className="justify-content-center">
+                                        <span>Robot Framework</span>
                                     </Row>
 
                                 </Col>
@@ -152,35 +158,62 @@ function Landing() {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col sm={4}>
-                                    <img src={js} alt="react" style={{width: 200, height: 200, position: 'relative'}}/>
+                                <Col sm={2}>
+                                    <img src={robot} alt="robot" style={{width: 200, height: 200, position: 'relative'}}/>
                                 </Col>
-                                <Col sm={8}>
+                                <Col sm={10}>
                                     <main>
-                                        <h2>Atividade: Pedras preciosas</h2>
+                                        <h2>Robot framework: API Testing</h2>
                                         <Badge pill variant="info">
-                                            React
+                                            Robot
                                         </Badge>{' '}
                                         <Badge pill variant="info">
-                                            JavaScript
+                                            Python
                                         </Badge>{' '}
-                                        <p> Experimento base para minha tese do mestrado.
+                                        <Badge pill variant="info">
+                                            JSON
+                                        </Badge>{' '}
+                                        <p> Projeto prático de testes em API utilizando o Robot framework em uma API de sign up.
                                         </p>
-                                        <br/>
-                                        <br/>
                                         <Row>
                                             <Col className="link_group">
-                                                <Link to="/jogo" className="button">Acessar Página</Link>
+                                                <a href="https://github.com/angelelouise/poc_api_robot#readme" className="button">Acessar Projeto</a>
                                             </Col>
                                         </Row>
                                     </main>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col sm={4}>
+                                <Col sm={2}>
+                                    <img src={robot} alt="robot" style={{width: 200, height: 200, position: 'relative'}}/>
+                                </Col>
+                                <Col sm={10}>
+                                    <main>
+                                        <h2>Robot framework: Front testing</h2>
+                                        <Badge pill variant="info">
+                                            Robot
+                                        </Badge>{' '}
+                                        <Badge pill variant="info">
+                                            Python
+                                        </Badge>{' '}
+                                        <Badge pill variant="info">
+                                            JSON
+                                        </Badge>{' '}
+                                        <p> Projeto prático de testes de aceitação utilizando o Robot framework no site Parodify.
+                                        </p>
+                                        <Row>
+                                            <Col className="link_group">
+                                                <a href="https://github.com/angelelouise/parodify_robot#readme" className="button">Acessar Projeto</a>
+                                            </Col>
+                                        </Row>
+                                    </main>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col sm={2}>
                                     <img src={cypress} alt="cypress" style={{width: 200, height: 200, position: 'relative'}}/>
                                 </Col>
-                                <Col sm={8}>
+                                <Col sm={10}>
                                     <main>
                                         <h2>Cypress: Front-end testing</h2>
                                         <Badge pill variant="info">
@@ -194,8 +227,6 @@ function Landing() {
                                         </Badge>{' '}
                                         <p> Projeto para treinamento de testes automatizados voltados para o front-end.
                                         </p>
-                                        <br/>
-                                        <br/>
                                         <Row>
                                             <Col className="link_group">
                                                 <Link to="/example-cypress" className="button">Acessar Página</Link>
@@ -209,10 +240,10 @@ function Landing() {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col sm={4}>
+                                <Col sm={2}>
                                     <img src={cypress} alt="cypress" style={{width: 200, height: 200, position: 'relative'}}/>
                                 </Col>
-                                <Col sm={8}>
+                                <Col sm={10}>
                                     <main>
                                         <h2>Cypress: API Testing</h2>
                                         <Badge pill variant="info">
@@ -226,8 +257,6 @@ function Landing() {
                                         </Badge>{' '}
                                         <p> Projeto prático de testes em APIs públicas utilizando do framework de testes Cypress.
                                         </p>
-                                        <br/>
-                                        <br/>
                                         <Row>
                                             <Col className="link_group">
                                                 <a href="https://github.com/angelelouise/cypress_test_api" className="button">Acessar Projeto</a>
@@ -237,10 +266,10 @@ function Landing() {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col sm={4}>
+                                <Col sm={2}>
                                     <img src={apotheca} alt="apotheca" style={{width: 200, height: 200, position: 'relative'}}/>
                                 </Col>
-                                <Col sm={8}>
+                                <Col sm={10}>
                                     <main>
                                         <h2>Apotheca</h2>
                                         <Badge pill variant="info">
@@ -251,8 +280,6 @@ function Landing() {
                                         </Badge>{' '}
                                         <p> Aplicativo de Compartilhamento de Conhecimento para Alunos da UFRN, desenvolvido como trabalho de                                            conclusão da especialização em dispositivos móveis.
                                         </p>
-                                        <br/>
-                                        <br/>
                                         <Row>
                                             <Col className="link_group">
                                                 <a href="https://github.com/angelelouise/apotheca" className="button">Acessar Projeto</a>
